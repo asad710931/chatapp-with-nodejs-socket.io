@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./datas/logo2.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-app</title>
+   
+     <script src="socket.io/socket.io.js"></script>
+     <style>
+        body{margin: 0px; font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+        .login-container{width:300px;margin:100px auto; 
+            background-color: dodgerblue;padding: 40px 20px;
+            display: flex;justify-content: center; flex-direction: column;align-items:center;
+        }
+        img{width: 100%; height: 100%;}
+        .logo{width: 120px;}
+        button:active{background-color: antiquewhite;}
+        h2{color: white;}
+        input[type=text]{width:230px;outline: none; border:none;padding:8px 10px;margin:15px;}
+        #login-btn,select{width:250px;outline: none; border:none;padding:8px 10px;margin:15px;}
+     </style>
+    </head>
+<body>
+   <div class="login-container">
+      <div class="logo">
+           <img src="./datas/logo2.png"/>
+      </div> 
+      <h2>Login To Chat</h2>
+      <form action="chathome.html" method="get">
+          <div class="user-name">
+            <input type="text" name="user" id="user" placeholder="User Name" required>
+          </div>
+          <div class="chat-groups">
+            <select name="group" id="group" required>
+                <option value="Programming">Programming</option>
+                <option value="Business">Business</option>
+                <option value="Creativity">Creativity</option>
+            </select>
+          </div>
+          <div class="btn">
+            <input type="submit" id="login-btn"/>
+          </div>
+    </form>
+
+   </div>
+
+
+</body>
+
+<script>
+
+
+// 
+    const $=(e)=>{return document.querySelector(e)}
+    const $_all=(e)=>{return document.querySelectorAll(e)}
+
+    //const user = prompt('write your name')
+
+
+
+  
+  
+
+
+
+</script>
+</html>
